@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-16 animate-fade-up">
         <div className="text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-portfolio-primary mb-6">
-            Hi, I'm [Your Name]
+            Hi, I'm Nilargha Roy
           </h1>
           <p className="text-xl md:text-2xl text-portfolio-text mb-8 max-w-2xl mx-auto">
             A passionate software developer specializing in building exceptional digital experiences.
@@ -17,7 +17,7 @@ const Hero = () => {
               variant="outline"
               size="lg"
               className="flex items-center gap-2"
-              onClick={() => window.open("https://github.com/yourusername", "_blank")}
+              onClick={() => window.open("https://github.com/neel1304", "_blank")}
             >
               <GithubIcon className="w-5 h-5" />
               GitHub
@@ -26,7 +26,7 @@ const Hero = () => {
               variant="outline"
               size="lg"
               className="flex items-center gap-2"
-              onClick={() => window.open("https://linkedin.com/in/yourusername", "_blank")}
+              onClick={() => window.open("https://www.linkedin.com/in/nilargha/", "_blank")}
             >
               <LinkedinIcon className="w-5 h-5" />
               LinkedIn
@@ -35,7 +35,7 @@ const Hero = () => {
               variant="outline"
               size="lg"
               className="flex items-center gap-2"
-              onClick={() => window.location.href = "mailto:your.email@example.com"}
+              onClick={() => window.location.href = "mailto:nilarghar@gmail.com"}
             >
               <MailIcon className="w-5 h-5" />
               Contact

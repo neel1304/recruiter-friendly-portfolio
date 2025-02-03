@@ -19,7 +19,7 @@ const Contact = () => {
                 variant="outline"
                 size="lg"
                 className="flex items-center gap-2"
-                onClick={() => window.location.href = "mailto:your.email@example.com"}
+                onClick={() => window.location.href = "mailto:nilarghar@gmail.com"}
               >
                 <MailIcon className="w-5 h-5" />
                 Email Me
@@ -28,7 +28,7 @@ const Contact = () => {
                 variant="outline"
                 size="lg"
                 className="flex items-center gap-2"
-                onClick={() => window.open("https://linkedin.com/in/yourusername", "_blank")}
+                onClick={() => window.open("https://www.linkedin.com/in/nilargha/", "_blank")}
               >
                 <LinkedinIcon className="w-5 h-5" />
                 LinkedIn
@@ -37,7 +37,7 @@ const Contact = () => {
                 variant="outline"
                 size="lg"
                 className="flex items-center gap-2"
-                onClick={() => window.open("https://github.com/yourusername", "_blank")}
+                onClick={() => window.open("https://github.com/neel1304", "_blank")}
               >
                 <GithubIcon className="w-5 h-5" />
                 GitHub
