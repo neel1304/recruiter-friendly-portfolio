@@ -1,5 +1,6 @@
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, Sparkles } from "lucide-react";
 
 const projects = [
   {
@@ -27,14 +28,16 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="py-16 bg-white" id="projects">
+    <section className="py-16 bg-gradient-to-br from-[#FEC6A1] to-[#FFDEE2]" id="projects">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-portfolio-primary mb-12 text-center">
+        <h2 className="text-4xl font-bold text-portfolio-primary mb-12 text-center flex items-center justify-center gap-2">
+          <Sparkles className="w-6 h-6 text-portfolio-primary" />
           Featured Projects
+          <Sparkles className="w-6 h-6 text-portfolio-primary" />
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="hover:shadow-lg transition-shadow">
+            <Card key={index} className="hover:scale-105 transition-transform duration-300 bg-white/70 backdrop-blur-sm border-none shadow-lg">
               <CardHeader>
                 <CardTitle className="flex justify-between items-center">
                   {project.title}
@@ -43,7 +46,7 @@ const Projects = () => {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-600 hover:text-portfolio-primary"
+                      className="text-portfolio-primary hover:text-portfolio-accent transition-colors"
                     >
                       <Github className="w-5 h-5" />
                     </a>
@@ -51,7 +54,7 @@ const Projects = () => {
                       href={project.live}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-600 hover:text-portfolio-primary"
+                      className="text-portfolio-primary hover:text-portfolio-accent transition-colors"
                     >
                       <ExternalLink className="w-5 h-5" />
                     </a>
@@ -64,7 +67,7 @@ const Projects = () => {
                   {project.tech.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="px-3 py-1 bg-portfolio-light text-portfolio-primary rounded-full text-sm"
+                      className="px-3 py-1 bg-white/50 text-portfolio-primary rounded-full text-sm hover:bg-white/80 transition-colors"
                     >
                       {tech}
                     </span>
