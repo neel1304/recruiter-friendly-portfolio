@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import { ExternalLink, Github, Bot, Database, Brain } from "lucide-react";
+import { ExternalLink, Github, Bot, Database, Brain, Eye } from "lucide-react";
 
 const projects = [
   {
@@ -22,6 +22,13 @@ const projects = [
     tech: ["IBM Watson", "NLP", "JavaScript", "WordPress"],
     github: "https://github.com/neel1304/Florence-Chatbot",
     live: "https://github.com/neel1304/Florence-Chatbot",
+  },
+  {
+    title: "Driver Drowsiness Detection",
+    description: "Developed a real-time computer vision system to detect driver drowsiness using facial landmarks and eye aspect ratio analysis. Implements alert mechanisms for drowsy driving prevention.",
+    tech: ["OpenCV", "Python", "Deep Learning", "Computer Vision"],
+    github: "https://github.com/neel1304/driver-drowsiness-detection",
+    live: "https://github.com/neel1304/driver-drowsiness-detection",
   },
 ];
 
