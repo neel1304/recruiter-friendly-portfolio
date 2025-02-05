@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import { ExternalLink, Github, Robot, Database, Brain } from "lucide-react";
+import { ExternalLink, Github, Bot, Database, Brain } from "lucide-react";
 
 const projects = [
   {
