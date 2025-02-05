@@ -1,28 +1,27 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import { ExternalLink, Github, Sparkles } from "lucide-react";
+import { ExternalLink, Github, Robot, Database, Brain } from "lucide-react";
 
 const projects = [
   {
-    title: "Project 1",
-    description: "A brief description of your first project",
-    tech: ["React", "TypeScript", "Node.js"],
-    github: "https://github.com/yourusername/project1",
-    live: "https://project1.com",
+    title: "Employee Turnover Prediction",
+    description: "Built an ML model using Decision Trees & Random Forests to predict employee turnover rates. Includes interactive GUI components for easy visualization and analysis.",
+    tech: ["Python", "Scikit-learn", "Random Forest", "GUI Development"],
+    github: "https://github.com/neel1304/Employee-Turnover-Prediction",
+    live: "https://github.com/neel1304/Employee-Turnover-Prediction",
   },
   {
-    title: "Project 2",
-    description: "A brief description of your second project",
-    tech: ["Next.js", "Tailwind CSS", "PostgreSQL"],
-    github: "https://github.com/yourusername/project2",
-    live: "https://project2.com",
+    title: "Selenium ToolsQA Automation",
+    description: "Developed an automated testing framework for website registration processes using Selenium WebDriver, demonstrating expertise in test automation.",
+    tech: ["Java", "Selenium", "TestNG", "Automation Testing"],
+    github: "https://github.com/neel1304/Selenium_ToolsQA__Automation",
+    live: "https://github.com/neel1304/Selenium_ToolsQA__Automation",
   },
   {
-    title: "Project 3",
-    description: "A brief description of your third project",
-    tech: ["React Native", "Firebase", "Redux"],
-    github: "https://github.com/yourusername/project3",
-    live: "https://project3.com",
+    title: "Florence Chatbot",
+    description: "Created an intelligent recommendation chatbot using IBM Watson, implementing advanced concepts like Digression, Handlers & Slots. Deployed on WordPress.",
+    tech: ["IBM Watson", "NLP", "JavaScript", "WordPress"],
+    github: "https://github.com/neel1304/Florence-Chatbot",
+    live: "https://github.com/neel1304/Florence-Chatbot",
   },
 ];
 
@@ -31,9 +30,9 @@ const Projects = () => {
     <section className="py-16 bg-gradient-to-br from-[#FEC6A1] to-[#FFDEE2]" id="projects">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-portfolio-primary mb-12 text-center flex items-center justify-center gap-2">
-          <Sparkles className="w-6 h-6 text-portfolio-primary" />
+          <Brain className="w-6 h-6 text-portfolio-primary" />
           Featured Projects
-          <Sparkles className="w-6 h-6 text-portfolio-primary" />
+          <Brain className="w-6 h-6 text-portfolio-primary" />
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
