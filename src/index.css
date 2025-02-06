@@ -88,6 +88,31 @@
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
+
+  @keyframes spin0 { 
+    from { transform: translateY(-500%); }
+    to { transform: translateY(0); }
+  }
+  @keyframes spin1 { 
+    from { transform: translateY(-400%); }
+    to { transform: translateY(0); }
+  }
+  @keyframes spin2 { 
+    from { transform: translateY(-300%); }
+    to { transform: translateY(0); }
+  }
+  @keyframes spin3 { 
+    from { transform: translateY(-200%); }
+    to { transform: translateY(0); }
+  }
+  @keyframes spin4 { 
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+  }
+  @keyframes spin5 { 
+    from { transform: translateY(-50%); }
+    to { transform: translateY(0); }
+  }
 }
 
 @layer base {
