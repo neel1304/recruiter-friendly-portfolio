@@ -35,9 +35,26 @@ const projects = [
 const Projects = () => {
   return (
     <section className="py-16 relative overflow-hidden" id="projects">
-      {/* Custom background with multiple gradients for depth */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#FEC6A1] to-[#FFDEE2] opacity-90"></div>
+      {/* Initial white background */}
+      <div className="absolute inset-0 bg-white"></div>
+      
+      {/* Animated color background that gets "sprayed" */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#FEC6A1] to-[#FFDEE2] opacity-90 animate-color-spray"></div>
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjUwIiBoZWlnaHQ9IjUwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNIDUwIDAgTCAwIDAgMCA1MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMSkiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==')] opacity-5"></div>
+      
+      {/* Mario-like character */}
+      <div className="absolute w-16 h-16 bg-[#1A1F2C] animate-run-spray">
+        {/* Character body */}
+        <div className="absolute inset-0 rounded-full bg-[#9b87f5]"></div>
+        {/* Spray effect */}
+        <div className="absolute -right-8 top-1/2 transform -translate-y-1/2">
+          <div className="w-12 h-8 animate-spray">
+            <div className="w-2 h-2 bg-[#FEC6A1] rounded-full absolute"></div>
+            <div className="w-2 h-2 bg-[#FFDEE2] rounded-full absolute top-2"></div>
+            <div className="w-2 h-2 bg-[#9b87f5] rounded-full absolute top-4"></div>
+          </div>
+        </div>
+      </div>
       
       <div className="container mx-auto px-4 relative">
         <h2 className="text-4xl font-bold text-[#1A1F2C] mb-12 text-center flex items-center justify-center gap-2">

@@ -71,10 +71,27 @@ export default {
             transform: "translateY(0)",
           },
         },
+        "run-spray": {
+          "0%": { left: "-64px", transform: "scaleX(1)" },
+          "49.9%": { transform: "scaleX(1)" },
+          "50%": { transform: "scaleX(-1)" },
+          "100%": { left: "calc(100% + 64px)", transform: "scaleX(-1)" }
+        },
+        "spray": {
+          "0%, 100%": { transform: "rotate(-15deg)" },
+          "50%": { transform: "rotate(15deg)" }
+        },
+        "color-spray": {
+          "0%": { clipPath: "inset(0 100% 0 0)" },
+          "100%": { clipPath: "inset(0 0 0 0)" }
+        }
       },
       animation: {
         "fade-up": "fade-up 0.5s ease-out",
-      },
+        "run-spray": "run-spray 8s linear infinite",
+        "spray": "spray 0.5s ease-in-out infinite",
+        "color-spray": "color-spray 8s linear"
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],
