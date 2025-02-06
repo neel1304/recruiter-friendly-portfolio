@@ -1,4 +1,3 @@
-
 import { GithubIcon, LinkedinIcon, MailIcon, Sparkles } from "lucide-react";
 import { Button } from "./ui/button";
 
